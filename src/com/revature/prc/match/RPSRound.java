@@ -16,6 +16,8 @@ public class RPSRound implements Round{
 		Result blueResult = Result.forInt(blue.getChoice(3));
 		
 		winner = determineWinner(redResult, blueResult);
+		
+		System.out.println(redResult + " " + blueResult);
 		}
 	}
 	private Person determineWinner(Result redResult, Result blueResult){
@@ -43,7 +45,8 @@ public class RPSRound implements Round{
 	@Override
 	public void setup(Person red, Person blue) {
 	
-		
+		this.red = red;
+		this.blue = blue;
 	}
 
 }
