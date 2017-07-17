@@ -8,3 +8,4 @@ public class Player implements Person{
 		return (int)(Math.random()*numOfChoices);
 	}
 }
+
